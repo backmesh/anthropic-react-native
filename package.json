@@ -1,28 +1,27 @@
 {
-  "name": "openai-react-native",
-  "version": "0.3.6",
-  "description": "OpenAI React Native API Client without polyfills",
+  "name": "anthropic-react-native",
+  "version": "0.1.0",
+  "description": "Anthropic React Native API Client without polyfills",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "prepare": "npm run build",
-    "test": "./scripts/test"
+    "prepare": "npm run build"
   },
   "keywords": [
-    "openai",
+    "anthropic",
     "react-native",
     "ios",
     "android"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/backmesh/openai-react-native.git"
+    "url": "git+https://github.com/backmesh/anthropic-react-native.git"
   },
   "author": "L. Fernando De Pombo <f@backmesh.com> (https://backmesh.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/backmesh/openai-react-native/issues"
+    "url": "https://github.com/backmesh/anthropic-react-native/issues"
   },
   "prettier": {
     "quoteProps": "consistent",
@@ -33,16 +32,12 @@
   },
   "jest": {
     "preset": "jest-expo",
-    "testPathIgnorePatterns": [
-      "openai-node"
-    ],
     "moduleNameMapper": {
       "^react-native-sse$": "<rootDir>/node_modules/react-native-sse"
     }
   },
   "dependencies": {
-    "expo-file-system": "^17.0.1",
-    "openai": "^4.56.0",
+    "@anthropic-ai/sdk": "^0.27.3",
     "react-native-sse": "^1.2.1"
   },
   "devDependencies": {

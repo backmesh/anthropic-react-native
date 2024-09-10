@@ -6,7 +6,7 @@
       "@/*": [
         "./*",
       ],
-      "openai-react-native": ["./node_modules/openai-react-native/dist"]
+      "anthropic-react-native": ["./node_modules/anthropic-react-native/dist"]
     }
   },
   "include": [
