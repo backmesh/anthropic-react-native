@@ -1,6 +1,6 @@
 # Anthropic React Native Client
 
-The goal of this library is to use [React Native SSE](https://github.com/binaryminds/react-native-sse) and [Expo FileSystem](https://docs.expo.dev/versions/latest/sdk/filesystem/) instead of polyfills to support calling the Anthropic API directly from React Native with streaming and file upload support. The package uses the same types and API as the [Anthropic Node SDK](https://github.com/anthropics/anthropic-sdk-typescript) wherever possible.
+The goal of this library is to use [React Native SSE](https://github.com/binaryminds/react-native-sse) instead of polyfills to support calling the Anthropic API directly from React Native with streaming. The package uses the same types and API as the [Anthropic Node SDK](https://github.com/anthropics/anthropic-sdk-typescript) wherever possible.
 
 > [!CAUTION]
 > This package is meant to be used with a proxy to Anthropic like the one [Backmesh](https://backmesh.com) provides. The `baseURL` parameter for this Anthropic client is thus mandatory. If you do not use a proxy and set the baseURL to https://api.anthropic.com/v1, you are basically exposing your Anthropic API key on the internet! You should never expose any secrets in the bundle of a web or mobile app. The correct usage of this client is to create an endpoint on a proxy server for communication with Anthropic and then use that endpoint with a user generated auth JWT in your app.
