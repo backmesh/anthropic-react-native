@@ -6,7 +6,8 @@
   "types": "dist/src/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "test": "echo 'No tests specified'"
   },
   "keywords": [
     "anthropic",
